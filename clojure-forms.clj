@@ -157,6 +157,43 @@ failed-protagonist-names
 
 (conj [1 2 3] 4)
 
+;LISTS
 
+'(1 2 3 4)
 
+(nth '(1 2 3 4) 0)
+
+(nth '(1 2 3 4) 2)
+
+(list 1 "two" {3 4})
+
+(conj '(1 2 3) 4)
+
+;SETS
+
+#{"kurt vonnegut" 20 :icicle}
+;the next commented line cause a duplicate error
+;#{"kurt vonnegut 20 :icicle 20}
+
+(hash-set 1 1 2 2)
+
+(conj #{:a :b} :b)
+
+(set [1 2 3 1 2 3 4])
+
+(contains? #{:a :b} :a)
+
+(contains? #{:a :b} 3)
+
+(contains? #{nil} nil)
+
+(:a #{:a :b})
+
+(:c #{:a :b})
+
+(get #{:a :b} :a)
+
+(get #{:a nil} nil)
+
+(get #{:a :b} "kurt vonnegut")
 
