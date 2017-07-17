@@ -197,3 +197,5 @@ failed-protagonist-names
 
 (get #{:a :b} "kurt vonnegut")
 
+; It's better to have 100 functions operate on one datre structure than 10 function on 10 data structures
+; Alan Perlis
